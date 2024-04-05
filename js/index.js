@@ -49,8 +49,9 @@ const platosInfo = document.querySelector(".platos-info")
              <div class="info-comida-uno">
              <h2>${data[i].nombre}</h2>
              <p>${data[i].datos}</p>
-             </div>
-             <a href=./paginado/pagina${data[i].id}/comida${data[i].id}.html>Mas Informacion</a>
+             <div class="link-mas-info"><a  href=./paginado/pagina${data[i].id}/comida${data[i].id}.html>Mas Informacion</a>
+             </div></div>
+             
              </div>`
              
         )

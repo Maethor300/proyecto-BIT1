@@ -17,6 +17,10 @@ body{
 header{
     grid-area: 1/1/2/5;
 }
+footer{
+     
+    grid-area: 4/5/4/1;
+}
 .div-data{
     width: 98%;
     margin: 0 auto;
@@ -94,16 +98,28 @@ main{
     padding-left: 20px;
     padding-bottom: 20px;
 }
-@media screen and (max-width: 1200px) {
+.link-mas-info {
+    padding-top: 10px;
+ text-align: center;
+}
+.link-mas-info a{
+     text-decoration: none;
+     color:cadetblue;
+   }
+footer .div-data h3 {
+     color: white;
+     padding-top: 10px;
+   }
+@media screen and (max-width:1100px) {
     
     .platos-info{
         display: grid;
          
-        grid-template-rows: 368px 368px;
+        grid-template-rows: 400px 400px;
         grid-template-columns: 1fr 1fr ;
     }
 }
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 500px) {
     
     .platos-info{
         display: grid;
