@@ -5,6 +5,27 @@
 body{
     background-color: antiquewhite;
 }
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 110px 1fr    ;
+    grid-template-columns: 1fr 1fr 1fr   ;
+}
+header{
+     
+    grid-area: 1/1/2/7;
+  
+}
+main{
+  
+    
+    grid-area: 3/2/2/2;
+     
+}
+footer{
+    display: grid;
+    grid-area: 4/4/5/1;
+}
 .div-data{
     width: 98%;
     margin: 0 auto;
@@ -37,34 +58,37 @@ body{
     border-radius: 50px;
 
 }
-.container{
-    width: 30%;
-    margin: 0 auto;
+.container-formulario{
+   
     background-color: white;
     height: 500px;
-    margin-top: 20px;
     padding: 20px;
 }
-.container h2{
+.container-formulario h2{
     text-align: center;
     margin-bottom: 20px;
     font-size: 20px;
     color: #7E4333;
 }
-.container p{
+.container-formulario p{
      
     margin-bottom: 20px;
     font-size: 10px;
+}
+.form-group{
+    padding-top: 10px;
 }
 .form-group input,.form-group textarea{
     width: 100%;
     background-color: #DFDFDF;
     border: none;
+    
 }
-.form-group label {
-    padding-top: 20px;
+.form-group label{
+    font-weight: bold;
+    color: #7E4333;
 }
-.container button{
+.container-formulario button{
     background-color: #255538;
     border: none;
     color: white;
@@ -72,8 +96,20 @@ body{
      padding: 8px 20px 8px 20px;
     
 }
-.container .button-div{
-  display: flex;
-  justify-content: center;
+.container-formulario .button-div{
+   
   padding-top: 20px;
+}
+.div-data .div-info-footer{
+    color: white;
+    padding-top: 14px;
+}
+@media screen and (max-width:745px) {
+     
+    .container{
+      
+     
+        grid-template-rows: 110px 1fr  ;
+        grid-template-columns: 1fr ;
+    }
 }

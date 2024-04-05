@@ -5,7 +5,7 @@
 #div-container{
     height: 100vh;
     display: grid;
-    grid-template-rows: 110px 1fr 1fpx 100px ;
+    grid-template-rows: 110px 1fr 1px 100px ;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
 }
 body{
