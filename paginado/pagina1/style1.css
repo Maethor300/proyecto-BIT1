@@ -5,39 +5,134 @@
 #div-container{
     height: 100vh;
     display: grid;
-    grid-template-rows: 110px 1fr 100px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 110px 1fr 1fr 100px ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
 }
 body{
     
     background-color: antiquewhite;
 }
 header{
-    grid-area: 1/1/2/5;
+    grid-area: 1/1/2/4;
 }
 main{
     display: grid;
-    grid-area: 2/1/3/4;
+    grid-area: 2/1/3/6;
+    margin-right: 190px;
+}
+aside{
+    display: grid;
+    grid-area: 2/5/3/7;
+    margin-right: 80px;
+    margin-left: 100px;
+    height: 20px;
+}
+footer{
+    display: grid;
+    grid-area: 4/5/4/1;
+    
+}
+.img-receta{
+   padding: 20px;
+   
 }
 .img-receta img{
-     margin-left: 100px;
-     margin-top: 20px;
-     width: 700px;
-     height: 150px;
+     
+     width: 100%;
+     height: 250px;
+     border-radius: 10px;
+}
+.data-receta{
+    background-color: white;
+    margin-left: 80px;
+  
+    border-radius: 10px;
+     
+}
+.info-receta{
+    padding-left: 20px;
+   
 }
 .Ingredients-receta{
     background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px;
+   
+    
+}
+.Ingredients-receta h2 {
+    
+    padding-bottom: 20px;
+    color: #7E4333;
+}
+.Ingredients-receta ul{
+    padding-bottom: 20px;
+}
+.calorias-data span{
+    color: #7E4333;
 }
 .linea-horizontal {
     border-top: 1px solid #000;  
-    width: 100%;  
+  
     margin: 20px 0; 
+}
+.first-info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.first-info h1{
+    color: #7E4333;
+     font-family: serif;
+}
+.preparation-receta{
+    background-color:beige;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+   
 }
 .more-recetas{
     background-color: white;
+    border-radius: 10px;
+    padding: 20px; 
+     
+}
+.more-recetas h2{
+    padding-bottom: 20px;
 }
 .img-more-receta img{
     width: 60px;
     height: 60px;
     border-radius: 30px;
+}
+.calorias-data{
+   display: flex;
+   justify-content: space-between;
+}
+.data-img-more-receta{
+    display: flex;
+    gap: 20px;
+
+}
+@media screen and (max-width:1200px) {
+    .data-receta{
+        margin: 0;
+    }
+    main{
+        display: grid;
+        grid-area: 3/1/2/7;
+        margin: 20px;
+    }
+     aside{
+        margin: 0px 20px 20px 20px ;
+      
+       
+        grid-area: 3/1/4/8;
+        
+     }
+}
+@media only screen and (max-width: 600px) {
+     
+      
 }
