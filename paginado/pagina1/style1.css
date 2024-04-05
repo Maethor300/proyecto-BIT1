@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+#div-container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 110px 1fr 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+body{
+    
+    background-color: antiquewhite;
+}
+header{
+    grid-area: 1/1/2/5;
+}
+main{
+    display: grid;
+    grid-area: 2/1/3/4;
+}
+.img-receta img{
+     margin-left: 100px;
+     margin-top: 20px;
+     width: 700px;
+     height: 150px;
+}
+.Ingredients-receta{
+    background-color: white;
+}
+.linea-horizontal {
+    border-top: 1px solid #000;  
+    width: 100%;  
+    margin: 20px 0; 
+}
+.more-recetas{
+    background-color: white;
+}
+.img-more-receta img{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}

@@ -1,9 +1,14 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+body{
+ 
+    background-color: antiquewhite;
 }
 #div-container{ 
-    width: 100vw;
+   
     height: 100vh;
     display: grid;
     grid-template-rows: 110px 1fr 100px;
@@ -13,7 +18,7 @@ header{
     grid-area: 1/1/2/5;
 }
 .div-data{
-    width: 95%;
+    width: 98%;
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
@@ -54,17 +59,57 @@ main{
     margin: 0 auto;
     height: 368px;
     display: flex;
-    justify-content: center;
+    justify-content: start; 
     border: 1px solid black;
+    background-image: url("../img/5a80e6e1cd7c7ea0f50d200b0ad11587.png");
 }
-.img-intro{
-    width: 100%;  
-    
-}
+
 .data-img{
-    position: absolute;
-    top: 35%;
-    left: 10%; 
+    
+    padding-top: 130px;
     color: white;
     font-size: 30px;
 }
+.platos-info{
+    width: 90%;
+    margin: 0 auto;
+   
+    display: grid;
+    grid-template-rows: 368px 368px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.data-info-div{
+ 
+    background-color: white;
+    padding: 10px;
+}
+
+.img-comida-uno img{
+    width: 100%;
+}
+.info-comida-uno{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 1200px) {
+    
+    .platos-info{
+        display: grid;
+         
+        grid-template-rows: 368px 368px;
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media screen and (max-width: 882px) {
+    
+    .platos-info{
+        display: grid;
+         
+        grid-template-rows: 368px 368px;
+        grid-template-columns: 1fr;
+    }
+}
+ 
