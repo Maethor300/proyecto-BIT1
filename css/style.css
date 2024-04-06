@@ -7,18 +7,21 @@ body{
  
     background-color: antiquewhite;
 }
+body.dark-mode {
+    background-color: black; /* Color de fondo del modo oscuro */
+     color: white;
+}
 #div-container{ 
    
     height: 100vh;
     display: grid;
-    grid-template-rows: 110px 1fr 100px;
+    grid-template-rows: 110px 1fr 110px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 header{
     grid-area: 1/1/2/5;
 }
 footer{
-     
     grid-area: 4/5/4/1;
 }
 .div-data{
@@ -38,8 +41,17 @@ footer{
 .title{
     color: white;
 }
+.title a{
+    text-decoration: none;
+    color: white;
+}
 .recipe{
     margin-top: 5px;
+    
+    
+}
+.recipe a{
+    text-decoration: none;
     color: white;
 }
 .fa-solid{
@@ -79,7 +91,7 @@ main{
     margin: 0 auto;
    
     display: grid;
-    grid-template-rows: 368px 368px;
+    grid-template-rows: 430px 430px;
     grid-template-columns: 1fr 1fr 1fr ;
     justify-content: center;
     margin-top: 20px;
@@ -90,17 +102,19 @@ main{
     background-color: white;
     padding: 10px;
 }
-
+.dark-mode .data-info-div{
+    background-color: #2F2F2F;
+} 
 .img-comida-uno img{
     width: 100%;
 }
-.info-comida-uno{
+.dark-mode .info-comida-uno{
     padding-left: 20px;
     padding-bottom: 20px;
 }
 .link-mas-info {
     padding-top: 10px;
- text-align: center;
+    text-align: center;
 }
 .link-mas-info a{
      text-decoration: none;
