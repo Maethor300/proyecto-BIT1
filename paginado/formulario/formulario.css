@@ -5,6 +5,10 @@
 body{
     background-color: antiquewhite;
 }
+body.dark-mode {
+    background-color: #222;  
+     
+}
 .container{
   height: 100vh;
     display: grid;
@@ -74,6 +78,9 @@ footer{
     height: 500px;
     padding: 20px;
 }
+.dark-mode .container-formulario{
+    background-color:  #2F2F2F;
+}
 .container-formulario h2{
     text-align: center;
     margin-bottom: 20px;
@@ -84,6 +91,13 @@ footer{
      
     margin-bottom: 20px;
     font-size: 10px;
+}
+.dark-mode .container-formulario p{
+     
+    color: white;
+}
+.dark-mode .form-group input,.dark-mode .form-group textarea{
+    background-color:  #4E4D4E;
 }
 .form-group{
     padding-top: 10px;
